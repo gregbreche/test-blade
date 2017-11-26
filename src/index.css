@@ -10,6 +10,10 @@ body {
     background-size: cover;
 }
 
-#info-circle {
+#pageTitle {
+    font-size: 100%;
+}
+
+#infoCircle {
     color: pink;
 }
