@@ -22,7 +22,7 @@ export default class TopNavBar extends React.Component {
                 <Navbar color="dark" dark>
                     <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
                     <NavbarBrand href="/" className="mr-auto" id="pageTitle">
-                        association pour sauver le monde
+                        Association pour sauver le monde
                     </NavbarBrand>
                     <i className="fa fa-info-circle fa-lg" aria-hidden="true" id="infoCircle" />
                     <Collapse isOpen={!this.state.collapsed} navbar>
