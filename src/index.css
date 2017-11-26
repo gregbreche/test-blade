@@ -46,9 +46,9 @@ body {
 }
 
 #acceptForm {
-    float: left;
+    float: right;
 }
 
 #declineForm {
-    float: left;
+    float: right;
 }
