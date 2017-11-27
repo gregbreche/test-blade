@@ -26,7 +26,7 @@ class App extends Component {
               <BackgroundImage blurred={this.state.blurredBackground}/>
               <div id="content">
                   <TopNavBar />
-                  <QuestionForm handler={this.handler} />
+                  <QuestionForm handler={this.handler} blurredBackground={this.state.blurredBackground} />
               </div>
           </div>
       );

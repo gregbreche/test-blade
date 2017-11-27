@@ -14,6 +14,22 @@ export default class QuestionForm extends React.Component {
     }
 
     render() {
+
+        let style = {
+            display: 'block',
+        };
+
+        if(this.props.blurredBackground) {
+            style = {
+                display: 'block',
+            };
+        } else {
+            style = {
+                display: 'none',
+            };
+        }
+
+
         return (
             <Container>
                 <Row id="mainRow">
@@ -35,7 +51,7 @@ export default class QuestionForm extends React.Component {
                     </Col>
                 </Row>
 
-                <Row>
+                <Row id="acceptForm" style={style}>
                     <Col>
                         Here goes the accept Form
                     </Col>
