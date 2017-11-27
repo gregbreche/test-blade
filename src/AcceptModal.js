@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import BackgroundImage from './BackgroundImage';
 
 class AcceptModal extends React.Component {
     constructor(props) {

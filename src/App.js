@@ -3,7 +3,7 @@ import TopNavBar from "./Navbar";
 import QuestionForm from "./QuestionForm";
 import BackgroundImage from "./BackgroundImage";
 
-class App extends React.Component {
+class App extends Component {
     constructor(props) {
 
         super(props);
