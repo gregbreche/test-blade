@@ -3,11 +3,30 @@ body {
     padding: 0;
     font-family: sans-serif;
 
-    background: url(assets/capa.jpg) no-repeat center center fixed;
+    /*background: url(assets/capa.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    background-size: cover;*/
+}
+
+#backgroundImage {
+    background-image: url('assets/capa.jpg');
     background-size: cover;
+    display: block;
+    height: 800px;
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 1;
+}
+
+#content {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 2;
 }
 
 #pageTitle {

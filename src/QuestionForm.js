@@ -6,6 +6,13 @@ import leafSource from './assets/leaf.jpg';
 
 export default class QuestionForm extends React.Component {
 
+    constructor(props) {
+
+        super(props);
+
+        this.handler = this.props.handler.bind(this);
+    }
+
     render() {
         return (
             <Container>
@@ -24,7 +31,7 @@ export default class QuestionForm extends React.Component {
 
                         <DeclineModal />
 
-                        <AcceptModal />
+                        <AcceptModal handler={this.props.handler} />
                     </Col>
                 </Row>
             </Container>

@@ -5,7 +5,7 @@ class ModalExample extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            modal: false
+            declineModalUp: false
         };
 
         this.toggle = this.toggle.bind(this);
@@ -13,7 +13,7 @@ class ModalExample extends React.Component {
 
     toggle() {
         this.setState({
-            modal: !this.state.modal
+            declineModalUp: !this.state.declineModalUp
         });
     }
 
@@ -24,7 +24,7 @@ class ModalExample extends React.Component {
                     Décliner
                 </button>
 
-                <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
+                <Modal isOpen={this.state.declineModalUp} toggle={this.toggle} className={this.props.className}>
                     <ModalHeader toggle={this.toggle}>Message</ModalHeader>
                     <ModalBody>
                         Êtes-vous sûr de vouloir décliner le formulaire de contact ?
