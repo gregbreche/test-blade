@@ -13,7 +13,7 @@ class AcceptModal extends React.Component {
     render() {
 
         return (
-            <div id="acceptForm">
+            <div id="acceptButton">
                 <button onClick={this.toggle} id="accept">
                     Accepter
                 </button>
