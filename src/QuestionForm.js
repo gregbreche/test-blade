@@ -34,8 +34,13 @@ export default class QuestionForm extends React.Component {
                         <AcceptButton handler={this.props.handler} />
                     </Col>
                 </Row>
-            </Container>
 
+                <Row>
+                    <Col>
+                        Here goes the accept Form
+                    </Col>
+                </Row>
+            </Container>
         );
     }
 }

@@ -43,7 +43,8 @@ body {
 }
 
 #mainRow-image {
-    height: 45%;
+    width: 100%;
+    height: auto;
 
     -webkit-box-shadow:0px 3px 3px grey;
     -moz-box-shadow:0px 3px 3px grey;
@@ -52,6 +53,7 @@ body {
 
 #mainRow-question {
     height: fit-content;
+    padding-top: 2%;
     padding-bottom: 2%;
     background-color: white;
 

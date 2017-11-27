@@ -39,22 +39,17 @@ class AcceptModal extends React.Component {
                     Accepter
                 </button>
 
-                <div style={style}>
+                <Container style={style}>
                     <Row>
                         <Col>
                             <p>Banane</p>
                         </Col>
                     </Row>
-                </div>
+                </Container>
 
             </div>
         );
     }
-
-
 }
 
 export default AcceptModal;
-
-/*
-*/
