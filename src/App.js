@@ -18,13 +18,12 @@ class App extends React.Component {
         this.setState({
            blurredBackground: !this.state.blurredBackground
         });
-        alert('toto');
     }
 
     render() {
       return (
           <div>
-              <BackgroundImage />
+              <BackgroundImage blurred={this.state.blurredBackground}/>
               <div id="content">
                   <TopNavBar />
                   <QuestionForm handler={this.handler} />
