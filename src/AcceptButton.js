@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
 
 class AcceptModal extends React.Component {
     constructor(props) {
@@ -24,11 +23,3 @@ class AcceptModal extends React.Component {
 }
 
 export default AcceptModal;
-
-/*<Container style={style}>
-                    <Row>
-                        <Col>
-                            <p>Banane</p>
-                        </Col>
-                    </Row>
-                </Container>*/
