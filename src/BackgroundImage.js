@@ -4,7 +4,7 @@ class BackgroundImage extends React.Component {
 
     render() {
 
-        var blur = {};
+        let blur = {};
         if( this.props.blurred ) {
             blur = {
                 filter: 'blur(5px)',

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import DeclineModal from './DeclineModal';
-import AcceptModal from './AcceptModal';
+import AcceptButton from './AcceptButton';
 import leafSource from './assets/leaf.jpg';
 
 export default class QuestionForm extends React.Component {
@@ -31,7 +31,7 @@ export default class QuestionForm extends React.Component {
 
                         <DeclineModal />
 
-                        <AcceptModal handler={this.props.handler} />
+                        <AcceptButton handler={this.props.handler} />
                     </Col>
                 </Row>
             </Container>
