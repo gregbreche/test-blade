@@ -24,43 +24,43 @@ class AcceptForm extends React.Component {
             <Row id="acceptForm" style={style}>
                 <Form>
                     <FormGroup row>
-                        <Label for="exampleEmail" sm={2}>Email</Label>
+                        <Label for="exampleEmail" sm={2}>Nom</Label>
                         <Col sm={10}>
                             <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" />
                         </Col>
                     </FormGroup>
                     <FormGroup row>
-                        <Label for="exampleEmail" sm={2}>Email</Label>
+                        <Label for="exampleEmail" sm={2}>Prénom</Label>
                         <Col sm={10}>
                             <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" />
                         </Col>
                     </FormGroup>
                     <FormGroup row>
-                        <Label for="exampleEmail" sm={2}>Email</Label>
+                        <Label for="exampleEmail" sm={2}>Profession</Label>
                         <Col sm={10}>
                             <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" />
                         </Col>
                     </FormGroup>
                     <FormGroup row>
-                        <Label for="exampleEmail" sm={2}>Email</Label>
+                        <Label for="exampleEmail" sm={2}>Langue</Label>
                         <Col sm={10}>
                             <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" />
                         </Col>
                     </FormGroup>
                     <FormGroup row>
-                        <Label for="exampleEmail" sm={2}>Email</Label>
+                        <Label for="exampleEmail" sm={2}>Situation familiale</Label>
                         <Col sm={10}>
                             <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" />
                         </Col>
                     </FormGroup>
                     <FormGroup row>
-                        <Label for="exampleEmail" sm={2}>Email</Label>
+                        <Label for="exampleEmail" sm={2}>Adresse email</Label>
                         <Col sm={10}>
                             <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" />
                         </Col>
                     </FormGroup>
                     <FormGroup row>
-                        <Label for="exampleEmail" sm={2}>Email</Label>
+                        <Label for="exampleEmail" sm={2}>Téléphone</Label>
                         <Col sm={10}>
                             <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" />
                         </Col>
