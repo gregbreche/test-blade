@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap';
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Form, FormGroup, Label, Input } from 'reactstrap';
 
 class AcceptForm extends React.Component {
 
@@ -19,6 +19,9 @@ class AcceptForm extends React.Component {
                 display: 'none',
             };
         }
+
+        let phoneValid = '';
+        const phoneRegEx = /^[0-9]{10}$/;
 
         return (
             <Row id="acceptForm" style={style}>

@@ -31,9 +31,8 @@ export default class QuestionForm extends React.Component {
                             ainsi que nos newsletters. Grâce à votre engagement au sein de notre association vous participez à rendre
                             ce monde plus juste. Merci !</p>
 
-                        <DeclineModal />
-
                         <AcceptButton handler={this.props.handler} />
+                        <DeclineModal />
                     </Col>
                 </Row>
 

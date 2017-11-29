@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {MuiThemeProvider} from 'material-ui/styles';
 import TopNavBar from "./Navbar";
 import QuestionForm from "./QuestionForm";
 import BackgroundImage from "./BackgroundImage";
@@ -11,6 +12,7 @@ class App extends Component {
         this.state = {
             blurredBackground: false
         };
+
         this.handler = this.handler.bind(this);
     }
 
@@ -20,15 +22,19 @@ class App extends Component {
         });
     }
 
+
+
     render() {
       return (
-          <div>
-              <BackgroundImage blurred={this.state.blurredBackground}/>
-              <div id="content">
-                  <TopNavBar />
-                  <QuestionForm handler={this.handler} blurredBackground={this.state.blurredBackground} />
+          <MuiThemeProvider>
+              <div>
+                  <BackgroundImage blurred={this.state.blurredBackground}/>
+                  <div id="content">
+                      <TopNavBar />
+                      <QuestionForm handler={this.handler} blurredBackground={this.state.blurredBackground} />
+                  </div>
               </div>
-          </div>
+          </MuiThemeProvider>
       );
     }
 }

@@ -1,42 +1,65 @@
 import React from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import {FlatButton, Dialog} from 'material-ui';
 
-class ModalExample extends React.Component {
+const customContentStyle = {
+    width: '30%',
+    maxWidth: 'none',
+};
+
+class DeclineModal extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             declineModalUp: false
         };
-
-        this.toggle = this.toggle.bind(this);
+        this.handleOpen = this.handleOpen.bind(this);
+        this.handleClose = this.handleClose.bind(this);
     }
 
-    toggle() {
+    handleOpen() {
         this.setState({
-            declineModalUp: !this.state.declineModalUp
+           declineModalUp: true
+        });
+    }
+
+    handleClose() {
+        this.setState({
+            declineModalUp: false
         });
     }
 
     render() {
+        const actions = [
+            <FlatButton
+                label="Annuler"
+                onClick={this.handleClose}
+            />,
+            <FlatButton
+                label="Oui"
+                primary={true}
+                onClick={this.handleClose}
+            />,
+        ];
+
         return (
             <div id="declineForm">
-                <button onClick={this.toggle} id="decline">
-                    Décliner
-                </button>
+                <FlatButton label="Décliner" onClick={this.handleOpen} />
 
-                <Modal isOpen={this.state.declineModalUp} toggle={this.toggle} className={this.props.className}>
-                    <ModalHeader toggle={this.toggle}>Message</ModalHeader>
-                    <ModalBody>
-                        Êtes-vous sûr de vouloir décliner le formulaire de contact ?
-                    </ModalBody>
-                    <ModalFooter>
-                        <Button color="secondary" onClick={this.toggle}>Annuler</Button>
-                        <Button color="primary" onClick={this.toggle}>Oui</Button>{' '}
-                    </ModalFooter>
-                </Modal>
+                <Dialog
+                    title="Message"
+                    actions={actions}
+                    modal={false}
+                    open={this.state.declineModalUp}
+                    onRequestClose={this.handleClose}
+                    contentStyle={customContentStyle}
+                >
+                    Êtes-vous sûr de vouloir décliner le formulaire de contact ?
+                </Dialog>
+
+
             </div>
         );
     }
 }
 
-export default ModalExample;
+export default DeclineModal;

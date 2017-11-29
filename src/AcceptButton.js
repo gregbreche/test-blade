@@ -1,4 +1,5 @@
 import React from 'react';
+import {FlatButton} from 'material-ui';
 
 class AcceptModal extends React.Component {
     constructor(props) {
@@ -14,9 +15,7 @@ class AcceptModal extends React.Component {
 
         return (
             <div id="acceptButton">
-                <button onClick={this.toggle} id="accept">
-                    Accepter
-                </button>
+                <FlatButton label="Primary" primary={true} onClick={this.toggle} />
             </div>
         );
     }
