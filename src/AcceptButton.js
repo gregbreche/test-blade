@@ -15,7 +15,7 @@ class AcceptModal extends React.Component {
 
         return (
             <div id="acceptButton">
-                <FlatButton label="Primary" primary={true} onClick={this.toggle} />
+                <FlatButton label="Accepter" primary={true} onClick={this.toggle} />
             </div>
         );
     }
