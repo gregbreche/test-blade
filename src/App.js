@@ -10,10 +10,13 @@ class App extends Component {
         super(props);
 
         this.state = {
-            blurredBackground: false
+            blurredBackground: false,
+            navOpened: false,
+            style: ''
         };
 
         this.handler = this.handler.bind(this);
+        this.toggleNavbar = this.toggleNavbar.bind(this);
     }
 
     handler() {
@@ -22,16 +25,35 @@ class App extends Component {
         });
     }
 
+    toggleNavbar() {
+        this.setState({
+            navOpened: !this.state.navOpened
+        },
+            function() {
+                if (this.state.navOpened) {
+                    this.setState({
+                        style: '200px'
+                    });
+                } else {
+                    this.setState({
+                        style: ''
+                    });
+                }
+            });
 
+
+    }
 
     render() {
       return (
           <MuiThemeProvider>
               <div>
-                  <BackgroundImage blurred={this.state.blurredBackground}/>
+                  <BackgroundImage blurred={this.state.blurredBackground} style={{paddingLeft : this.state.style}} />
                   <div id="content">
-                      <TopNavBar />
-                      <QuestionForm handler={this.handler} blurredBackground={this.state.blurredBackground} />
+                      <TopNavBar handler={this.toggleNavbar} navOpened={this.state.navOpened} />
+                      <div id="content-form" style={{paddingLeft : this.state.style}}>
+                        <QuestionForm handler={this.handler} blurredBackground={this.state.blurredBackground} />
+                      </div>
                   </div>
               </div>
           </MuiThemeProvider>
