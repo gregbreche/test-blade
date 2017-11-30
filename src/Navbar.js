@@ -1,5 +1,5 @@
 import React from 'react';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav } from 'reactstrap';
 import { Drawer, MenuItem } from 'material-ui';
 
 export default class TopNavBar extends React.Component {
@@ -12,6 +12,9 @@ export default class TopNavBar extends React.Component {
 
 
     render() {
+
+        let color = 'grey';
+
         return (
             <div>
                 <Navbar color="dark" dark>
@@ -25,10 +28,10 @@ export default class TopNavBar extends React.Component {
                         </Nav>
                     </Collapse>
                     <Drawer
-                        docked={false}
                         width={200}
                         open={this.props.navOpened}
                         id="drawer"
+                        containerStyle={{top:56}}
                     >
                         <MenuItem onClick={this.props.handler}>Close Me</MenuItem>
                     </Drawer>
